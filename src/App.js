@@ -5,19 +5,20 @@ import Nav from "./Components/Nav";
 import { Provider } from "react-redux";
 import Store from "./Store";
 
-import { BrowserRouter as Browser } from "react-router-dom";
+import { BrowserRouter as Browser, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    
     <div className="App">
       {console.log("app rendered")}
-      {/* <Browser> */}
-        {/* <Provider store={Store}> */}
+      <Browser>
+        <Provider store={Store}>
           <Nav />
-          <Home />
-        {/* </Provider> */}
-      {/* </Browser> */}
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+          </Routes>
+        </Provider>
+      </Browser>
     </div>
   );
 }
