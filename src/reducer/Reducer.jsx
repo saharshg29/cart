@@ -9,7 +9,7 @@ import {
   export function Reducer(state = initialState, action) {
     switch (action.type) {
       case CREATE_TASK: {
-        return { ...state, todo: [action.payload, ...state.todo] };
+        return { ...state, selected: [action.payload, ...state.selected] };
       }
   
       case READ_TASK:

@@ -353,5 +353,5 @@ export const initialState = {
       thumbnailUrl: "https://via.placeholder.com/150/2cd88b",
     },
   ],
-  selected: null,
+  selected: [],
 };
