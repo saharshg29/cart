@@ -1,5 +1,6 @@
 import React from "react";
-
+import { useDispatch, useSelector } from "react-redux";
+import { Add } from "../action/Actions";
 import { initialState } from "../constants";
 let Card = initialState.Data;
 let column1 = [];
@@ -9,6 +10,8 @@ for (let i = 0; i < Card.length; i += 3) {
 }
 
 export default function Col1() {
+  const dispatch = useDispatch();
+  const Store = useSelector((store) => store.selected);
   return (
     <>
       {column1.map((item) => {
@@ -24,9 +27,14 @@ export default function Col1() {
                 <div className="card-body">
                   <h5 className="card-title">{item.id}</h5>
                   <p className="card-text">{item.title}</p>
-                  <a href="some" className="btn btn-primary">
+                  <span
+                    onClick={() => {
+                      dispatch(Add(item));
+                    }}
+                    className="btn btn-info"
+                  >
                     Click Me
-                  </a>
+                  </span>
                 </div>
               </div>
             </div>
