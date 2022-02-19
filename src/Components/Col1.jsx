@@ -1,7 +1,7 @@
 import React from "react";
-let Data = require("../Store");
 
-let Card = Data.Data;
+import { initialState } from "../constants";
+let Card = initialState.Data;
 let column1 = [];
 
 for (let i = 0; i < Card.length; i += 3) {

@@ -5,6 +5,7 @@ import Col3 from "./Col3";
 export default function Home() {
   return (
     <>
+    {console.log('Home renderrerd')}
       <div class="container">
         <div class="row">
           <div class="col">
