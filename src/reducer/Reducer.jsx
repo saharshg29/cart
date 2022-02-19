@@ -15,7 +15,6 @@ export function Reducer(state = initialState, action) {
     case READ_TASK:
       let arr = state.selected
       return {
-        ...state,
         selected: arr,
       };
 

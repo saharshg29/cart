@@ -14,6 +14,7 @@ export default function Col2() {
   const Store = useSelector((store) => store.selected);
   return (
     <>
+    
       {column2.map((item) => {
         return (
           <>

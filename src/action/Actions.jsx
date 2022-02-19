@@ -5,9 +5,8 @@ export const Add = (Task) => ({
   payload: Task,
 });
 
-export const Get = (id) => ({
+export const Get = () => ({
   type: READ_TASK,
-  payload: id,
 });
 
 export const EditTask = (Task) => ({
