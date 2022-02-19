@@ -22,8 +22,8 @@ export default function Col2() {
                   alt="something"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">{}</p>
+                  <h5 className="card-title">{item.id}</h5>
+                  <p className="card-text">{item.title}</p>
                   <a href="some" className="btn btn-primary">
                     Click Me{" "}
                   </a>

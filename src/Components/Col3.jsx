@@ -4,7 +4,7 @@ let Data = require("../Store");
 let Card = Data.Data;
 let column3 = [];
 
-for (let i = 0; i < Card.length; i += 3) {
+for (let i = 2; i < Card.length; i += 3) {
   column3.push(Card[i]);
 }
 
@@ -22,8 +22,8 @@ export default function Col3() {
                   alt="something"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">{}</p>
+                  <h5 className="card-title">{item.id}</h5>
+                  <p className="card-text">{item.title}</p>
                   <a href="some" className="btn btn-primary">
                     Click Me{" "}
                   </a>
