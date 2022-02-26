@@ -23,7 +23,7 @@ export function Reducer(state = initialState, action) {
       return {
         ...state,
         todo: state.todo.map((task) =>
-          task.id == action.payload.id ? action.payload : task
+          task.id === action.payload.id ? action.payload : task
         ),
       };
     }
@@ -32,7 +32,7 @@ export function Reducer(state = initialState, action) {
       console.log("Delete is getting called", action);
       return {
         ...state,
-        todo: state.todo.filter((task) => task.id != action.payload),
+        todo: state.todo.filter((task) => task.id !== action.payload),
       };
 
     default:

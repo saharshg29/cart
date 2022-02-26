@@ -11,7 +11,6 @@ for (let i = 2; i < Card.length; i += 3) {
 
 export default function Col3() {
   const dispatch = useDispatch();
-  const Store = useSelector((store) => store.selected);
   return (
     <>
       {column3.map((item) => {
