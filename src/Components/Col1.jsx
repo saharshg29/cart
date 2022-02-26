@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Add } from "../action/Actions";
 import { initialState } from "../constants";
 let Card = initialState.Data;
